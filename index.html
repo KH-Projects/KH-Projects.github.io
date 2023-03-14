@@ -96,7 +96,7 @@
     <a-scene>
         <a-assets>
             <video style="opacity: 0" id="greenscreenvideo" crossorigin="anonymous"
-                src="green.mp4" loop muted></video>
+                src="green.mp4" loop></video>
         </a-assets>
         <!-- <a-marker-camera preset='hiro'>  -->
         <a-entity material="shader: chromakey; src: #greenscreenvideo; color:0.1 0.9 0.2" geometry="primitive: plane"
@@ -110,7 +110,7 @@
     <script>
         document.querySelector("a-scene").style.display = "block";
         document.getElementById("greenscreenvideo").play();
-        document.getElementById("greenscreenvideo").muted = false;
+        // document.getElementById("greenscreenvideo").muted = false;
 
     </script>
 </body>
