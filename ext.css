@@ -1,0 +1,179 @@
+body {
+    min-height: 100vh;
+  }
+  .main_wrapper {
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .wrapper-01 {
+    background-image: url("./Header/TriGradient-20230309195517.png");
+    height: 138px;
+    background-repeat: no-repeat;
+    background-size: 100% 140%;
+  }
+  
+  .wrapper-02 img {
+    margin-top: 14px;
+    width: 111px;
+  }
+  .wrapper-02 {
+    text-align: center;
+  }
+  
+  .wrapper-04 {
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+  }
+  
+  .wrapper-04 label {
+    font-weight: 800;
+    color: #192642;
+    font-size: 12px;
+  }
+  
+  .wrapper-04 input {
+    border-radius: 20px;
+    background-color: rgb(225, 225, 225);
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .wrapper-04 button {
+    border-radius: 14px;
+    margin-top: 15px;
+    background: linear-gradient(-60deg, #39b1e0 0%, #3ecab2 60%);
+    color: white;
+    border: 8px double white;
+  }
+  
+  .wrapper-06 {
+    text-align: center;
+    color: #192642;
+    margin-top: 20px;
+    background-image: url("./Footer/fotter-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+    background-position-x: center;
+  }
+  .wrapper-001 {
+    margin: 35px;
+  }
+  
+  .wrapper-06 h1 {
+    font-weight: 900;
+    font-size: 35px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .wrapper-06 h3 {
+    font-weight: 900;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* next page */
+  
+  .wrapper-09 {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .wrapper-09 h4 {
+    font-weight: 800;
+    color: #dc7633;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .wrapper-09 h1 {
+    font-weight: 800;
+    color: #229954;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .wrapper-09 label {
+    font-weight: 800;
+    color: #192642;
+  }
+  
+  .wrapper-09 input {
+    border-radius: 20px;
+    background-color: rgb(225, 225, 225);
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .wrapper-09 form {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 70px;
+  }
+  
+  .wrapper-09 button {
+    border-radius: 14px;
+    margin-top: 20px;
+    background: linear-gradient(-60deg, #39b1e0 0%, #3ecab2 60%);
+    border: 8px double white;
+  }
+  
+  .wrapper-0002 {
+    font-size: 32px;
+  }
+  
+  /* midea query */
+  
+  @media (max-width: 342.98px) {
+    .wrapper-06 {
+      height: 190px;
+    }
+  
+    .wrapper-04 button {
+      margin-top: 7px;
+      font-size: 9px;
+    }
+  
+    .wrapper-04 input {
+      height: 38px;
+    }
+  }
+  
+  /* X-Small devices (portrait phones, less than 576px) */
+  @media (max-width: 575.98px) {
+    .wrapper-04 {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  
+  @media (max-width: 650.98px) {
+    .wrapper-06 {
+      height: 212px;
+    }
+  
+    .wrapper-06 h3 {
+      margin-top: 9px;
+    }
+  }
+  
+  /* Small devices (landscape phones, less than 768px) */
+  @media (max-width: 767.98px) {
+    .wrapper-04 {
+      margin-left: 119px;
+      margin-right: 119px;
+    }
+  }
+  
+  /* Medium devices (tablets, less than 992px) */
+  @media (max-width: 991.98px) {
+  }
+  
+  /* Large devices (desktops, less than 1200px) */
+  @media (max-width: 1199.98px) {
+  }
+  
+  /* X-Large devices (large desktops, less than 1400px) */
+  @media (max-width: 1399.98px) {
+  }
+  
+  /* XX-Large devices (larger desktops) */
+  /* No media query since the xxl breakpoint has no upper bound on its width */
