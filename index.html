@@ -64,7 +64,7 @@
     <script src="https://unpkg.com/aframe-chromakey-material/dist/aframe-chromakey-material.min.js"></script>
     <style>
         a-scene {
-            display: block;
+            display: none;
         }
 
         .a-enter-ar {
@@ -90,13 +90,67 @@
 </head>
 
 <body style='margin : 0px; overflow: hidden;'>
-    
-    <!-- <div id="layer" style="position:absolute; background-color:white; top:0; left:0; bottom:0; right:0;"></div> -->
+    <div class="main_wrapper">
+
+        <!-- <div id="header" class="wrapper-01">
+            <div class="wrapper-02">
+                <img src="./Header/topImage.png" class="img-fluid" alt="..." />
+            </div>
+        </div> -->
+
+        <div id="footer" class="wrapper-06">
+            <h3>KARNATAKA</h3>
+            <h3 class="wrapper-0002">ELECTION</h3>
+            <h1>2023</h1>
+        </div>
+        <div id="form" class="wrapper-03">
+            <form class="wrapper-04">
+                
+                <div class="d-grid gap-1">
+                    <button id="otpsubmit" class="btn btn-primary" type="button">
+                        Click Here <i class="bi bi-chevron-double-right"></i>
+                    </button>
+                </div>
+                <!-- <button type="submit" class="btn btn-primary">NEXT</button> -->
+            </form>
+        </div>
+
+
+
+        <div id="otp" class="wrapper-09">
+            <div class="wrapper-001">
+                <h4>
+                    YOU WILL RECIEVE AN OTP ON THIS
+                </h4>
+                <h1>MOBILE NO. 898XXXXXXX</h1>
+            </div>
+
+            <div>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">OTP</label>
+                        <input type="number" placeholder="- - - - - " class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button id="otpsubmit2" class="btn btn-primary" type="button">SUBMIT <i
+                                class="bi bi-chevron-double-right"></i></button>
+
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+        
+    </div>
+    <div id="layer" style="position:absolute; background-color:white; top:0; left:0; bottom:0; right:0;"></div>
     <!-- <a-scene embedded arjs> -->
     <a-scene>
         <a-assets>
             <video style="opacity: 0" id="greenscreenvideo" crossorigin="anonymous"
-                src="green.mp4" loop></video>
+                src="green.mp4" loop muted></video>
         </a-assets>
         <!-- <a-marker-camera preset='hiro'>  -->
         <a-entity material="shader: chromakey; src: #greenscreenvideo; color:0.1 0.9 0.2" geometry="primitive: plane"
@@ -108,9 +162,34 @@
 
 
     <script>
-        document.querySelector("a-scene").style.display = "block";
-        document.getElementById("greenscreenvideo").play();
-        // document.getElementById("greenscreenvideo").muted = false;
+        // document.getElementByID('otpsubmit').click();
+        /*         $("#button").click(function () {
+                    console.log("Loaded");
+                    // $.getScript("aframe-ar.js");
+                    document.getElementById('formcontainer').style.display = "none";
+                    document.getElementById('layer').style.display = "none";
+                    document.querySelector("a-scene").style.display = "block";
+                    document.getElementById("greenscreenvideo").play();
+                    document.getElementById("greenscreenvideo").muted = false;
+                }); */
+
+        $("#next").click(function () {
+
+            document.getElementById('form').style.display = "none";
+            document.getElementById('otp').style.display = "block";
+        });
+
+        $("#otpsubmit").click(function () {
+            document.getElementById('form').style.display = "none";
+            // document.getElementById('header').style.display = "none";
+            document.getElementById('otp').style.display = "none";
+            document.getElementById('footer').style.display = "none";
+            document.getElementById('layer').style.display = "none";
+            document.querySelector("a-scene").style.display = "block";
+            document.getElementById("greenscreenvideo").play();
+            document.getElementById("greenscreenvideo").muted = false;
+        })
+
 
     </script>
 </body>
