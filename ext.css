@@ -13,6 +13,19 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 140%;
   }
+
+  .wrapper-5 img {
+    height: 80px;
+    position: relative;
+    bottom: 21px;
+  }
+  
+  .wrapper-5 {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 42px;
+  }
   
   .wrapper-02 img {
     margin-top: 14px;
